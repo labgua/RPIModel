@@ -1,0 +1,7 @@
+RPIModel
+
+RPIModel è una astrazione da utilizzare nel WebSocket
+
+Essa memorizza tutti i cambiamenti degli input e le varie dichiarazioni per gli output.
+
+COnsente facilmente di poter condividere ai piu client connessi lo stato del Raspberry.

@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>RPIWebSocket</title>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/range.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">>
+</head>
+<body>
+	<h1>RPIWebSocket</h1>
+
+	<p>url : <input type="text" id="url" value="ws://10.42.0.31:8888/ws" /> <input type="button" value="Connetti" onclick="init();" /> </p>
+
+	<div class="rpi_settings">
+		pin : 
+		<select class="pin">
+			<option value="3">3</option>
+			<option value="5">5</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="10">10</option>
+			<option value="11">1</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="26">26</option>
+		</select>
+
+		mode : 
+		<select class="mode">
+			<option value="INPUT">INPUT</option>
+			<option value="OUTPUT">OUTPUT</option>
+			<option value="PWM">PWM</option>
+		</select>
+
+		<input type="button" value="Update" onclick="updateModePin()">
+	</div>
+
+	<div class="rpi_box">
+
+		<div class="left">
+			<p>PIN 1 : <input class="power" type="button" pin="1" /></p>
+			<p>PIN 3 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="3" onclick="toggleChange(this);" /></p>
+			<p>PIN 5 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="5" onclick="toggleChange(this);" /></p>
+			<p>PIN 7 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="7" onclick="toggleChange(this);" /></p>
+			<p>PIN 9 : <input class="gnd" type="button" pin="9" /></p>
+			<p>PIN 11 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="11" onclick="toggleChange(this);" /></p>
+			<p>PIN 13 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="13" onclick="toggleChange(this);" /></p>
+			<p>PIN 15 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="15" onclick="toggleChange(this);" /></p>
+			<p>PIN 17 : <input class="power" type="button" pin="17" /></p>
+			<p>PIN 19 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="19" onclick="toggleChange(this);" /></p>
+			<p>PIN 21 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="21" onclick="toggleChange(this);" /></p>
+			<p>PIN 23 : <input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="23" onclick="toggleChange(this);" /></p>
+			<p>PIN 25 : <input class="gnd" type="button" pin="25" /></p>
+		</div>
+		<div class="right">
+			<p><input class="power" type="button" pin="2" /> : PIN 2</p>
+			<p><input class="power" type="button" pin="4" /> : PIN 4</p>
+			<p><input class="gnd" type="button" pin="6" /> : PIN 6</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="8" onclick="toggleChange(this);" /> : PIN 8</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="10" onclick="toggleChange(this);" /> : PIN 10</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="12" onclick="toggleChange(this);" /> : PIN 12</p>
+			<p><input class="gnd" type="button" pin="14" /> : PIN 14</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="16" onclick="toggleChange(this);" /> : PIN 16</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="18" onclick="toggleChange(this);" /> : PIN 18</p>
+			<p><input class="gnd" type="button" pin="20" /> : PIN 20</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="22" onclick="toggleChange(this);" /> : PIN 22</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="24" onclick="toggleChange(this);" /> : PIN 24</p>
+			<p><input class="gpio" type="button" status="UNKNOWN" mode="UNKNOWN" pin="26" onclick="toggleChange(this);" /> : PIN 26</p>
+		</div>
+
+	</div>
+</body>
+</html>

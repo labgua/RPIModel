@@ -1,0 +1,56 @@
+.gpio{
+	width: 50px;
+	height: 50px;
+}
+
+.gpio[status=ON]{
+	background-color: green;
+}
+
+.gpio[status=OFF]{
+	background-color: red;
+}
+
+.gpio[status=UNKNOWN]{
+	background-color: gray;
+}
+
+
+
+
+.analog{
+
+}
+
+
+.power{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}
+
+.gnd{
+	width: 50px;
+	height: 50px;
+	background-color: black;
+}
+
+
+
+
+.rpi_box{
+	width: 60%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rpi_box > .left{
+	float: left;
+	text-align: right;
+}
+
+.rpi_box > .right{
+	float: right;
+	text-align: left;
+}
